@@ -53,6 +53,11 @@ fun Extension1(modifier: Modifier = Modifier) {
         Text(text = "First Word: $firstWord")
 
 
+        // Letter Count
+        val word = "MuezzaIsFat"
+        val letterCount = word.length
+        Text(text = "Word: $word")
+        Text(text = "Number of letters: $letterCount")
 
     }
 
@@ -72,6 +77,14 @@ fun String.isPalindrome(): Boolean {
 fun String.theFirstWord(): String {
     return this.split(" ").first()
 }
+
+
+//Extension Function for counting letters in a word
+// Commenting this out, as we found out  length is already as a built in property D:
+fun String.length(): Int {
+    return this.length
+}
+
 
 @Preview(showBackground = true)
 @Composable
