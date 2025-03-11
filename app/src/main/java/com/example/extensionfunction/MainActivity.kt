@@ -34,22 +34,24 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun Extension1(modifier: Modifier = Modifier) {
     Column(modifier = modifier.padding(16.dp)) {
-        val originalText = "hello"
+        //Hello Hi Double
+        val originalText = "nuriye"
         val doubledText = originalText.double()
-
-        val palindromeText = "hi"
-        val isPalindrome = palindromeText.isPalindrome()
-        Text(text = palindromeText.isPalindrome()
-        )
 
         Text(text = "Original: $originalText")
         Text(text = "Doubled: $doubledText")
 
+        //Palindrome
+        val palindromeText = "kayak"
+        val isPalindrome = palindromeText.isPalindrome()
+        Text(text = "Is Palindrome: ${palindromeText.isPalindrome()}")
+
+        //First Word
         val sentence = "Gulsum was here"
         val firstWord = sentence.theFirstWord()
         Text(text = "Sentence: $sentence")
         Text(text = "First Word: $firstWord")
-2
+
 
 
     }
